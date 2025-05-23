@@ -12,24 +12,73 @@ const html = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avi Brown's μblog</title>
+    <title>avi brown's μblog</title>
     <style>
-        body { font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; max-width: 800px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.6; color: #ebdbb2; background: #282828; }
-        h1 { color: #fabd2f; border-bottom: 2px solid #504945; padding-bottom: 0.5rem; }
-        .nav { margin-bottom: 2rem; }
-        .home-link { color: #83a598; text-decoration: none; font-size: 0.9rem; }
-        .home-link:hover { color: #8ec07c; text-decoration: underline; }
-        .entry { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #504945; }
-        .entry:last-child { border-bottom: none; }
-        .entry-title { color: #fb4934; margin-bottom: 0.5rem; }
-        .entry-date { color: #928374; font-size: 0.85rem; margin-bottom: 1rem; }
-        .entry-content { white-space: pre-wrap; color: #ebdbb2; }
+        @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+        :root {
+            --color-dark: #1a1a1a;
+            --color-light: #fafafa;
+            --color-primary: #008080;
+            --spacing: 1.5rem;
+            --font-stack: "IBM Plex Mono", monospace;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-dark: #fafafa;
+                --color-light: #1a1a1a;
+            }
+        }
+        * { box-sizing: border-box; }
+        body { 
+            background: var(--color-light); 
+            color: var(--color-dark); 
+            padding: 5vw; 
+            font-family: var(--font-stack); 
+            font-size: 1.5rem; 
+            line-height: 1.7; 
+            max-width: 60ch; 
+            margin: 0 auto; 
+        }
+        h1 { 
+            font-weight: 700; 
+            font-size: 2rem; 
+            line-height: 1.3; 
+            margin-bottom: calc(var(--spacing) / 2);
+        }
+        h2 { 
+            font-weight: 700; 
+            font-size: 1.5rem; 
+            line-height: 1.3; 
+            margin-bottom: calc(var(--spacing) / 2);
+        }
+        .nav { margin-bottom: var(--spacing); }
+        .home-link { 
+            color: currentColor; 
+            text-decoration-color: var(--color-primary); 
+            text-decoration-thickness: 0.2ex; 
+            text-underline-offset: 0.3ex; 
+        }
+        .home-link:hover { text-decoration-thickness: 0.3ex; }
+        .entry { 
+            margin-bottom: calc(var(--spacing) * 2); 
+            padding-bottom: var(--spacing); 
+        }
+        .entry:not(:last-child) { 
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+        }
+        .entry-title { margin-bottom: calc(var(--spacing) / 3); }
+        .entry-date { 
+            opacity: 0.5; 
+            font-size: 1rem; 
+            margin-bottom: var(--spacing); 
+        }
+        .entry-content { white-space: pre-wrap; }
     </style>
 </head>
 <body>
     <header>
         <div class="nav"><a href="https://avi.engineer" class="home-link">home</a></div>
-        <h1>Avi Brown's μblog</h1>
+        <h1>avi brown's μblog</h1>
     </header>
     <main>
         ${posts.map(post => `<article class="entry"><h2 class="entry-title">${post.title}</h2><div class="entry-date">${post.date}</div><div class="entry-content">${post.content}</div></article>`).join('')}
