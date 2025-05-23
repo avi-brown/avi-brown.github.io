@@ -1,32 +1,18 @@
 ---
-hello blog
+This is how I will quit X
 
-this is pretty cool
+This blog is just a plain text file on my computer.
+It looks like this:
 
-wowow
+@/imgs/blog_screenshot.png --medium
+
+I set it up with Sonnet 4's help. Basically:
+- I write blogs separated by "---"
+- I push to main
+- GitHub actions trigger a parser and index.html is generated
+
+I will start posting quick thoughts here instead of X.
 ---
-new blog
 
-test testasdkjh
-aksjdhkada
-@imgs/art2.png --small
-[test link](https://x.com/notifications)
-aksjhdkajsd
----
-hello
 
-test testasdkjh
-aksjdhkada
-aksjhdkajsd
----
-hello
 
-test testasdkjh
-aksjdhkada
-aksjhdkajsd
----
-hi
-
-test testasdkjh
-aksjdhkada
-aksjhdkajsd
