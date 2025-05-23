@@ -12,24 +12,24 @@ const html = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avi's Journal</title>
+    <title>Avi Brown's μblog</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 650px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.6; color: #333; background: #fff; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
-        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
-        .entry { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #eee; }
+        body { font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; max-width: 800px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.6; color: #ebdbb2; background: #282828; }
+        h1 { color: #fabd2f; border-bottom: 2px solid #504945; padding-bottom: 0.5rem; }
+        .nav { margin-bottom: 2rem; }
+        .home-link { color: #83a598; text-decoration: none; font-size: 0.9rem; }
+        .home-link:hover { color: #8ec07c; text-decoration: underline; }
+        .entry { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #504945; }
         .entry:last-child { border-bottom: none; }
-        .entry-title { color: #34495e; margin-bottom: 0.5rem; }
-        .entry-date { color: #7f8c8d; font-size: 0.85rem; margin-bottom: 1rem; }
-        .entry-content { white-space: pre-wrap; }
-        .back-link { color: #3498db; text-decoration: none; font-size: 0.9rem; }
-        .back-link:hover { text-decoration: underline; }
+        .entry-title { color: #fb4934; margin-bottom: 0.5rem; }
+        .entry-date { color: #928374; font-size: 0.85rem; margin-bottom: 1rem; }
+        .entry-content { white-space: pre-wrap; color: #ebdbb2; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Avi's Journal</h1>
-        <div class="meta"><a href="https://avi.engineer" class="back-link">← Back to main site</a></div>
+        <div class="nav"><a href="https://avi.engineer" class="home-link">home</a></div>
+        <h1>Avi Brown's μblog</h1>
     </header>
     <main>
         ${posts.map(post => `<article class="entry"><h2 class="entry-title">${post.title}</h2><div class="entry-date">${post.date}</div><div class="entry-content">${post.content}</div></article>`).join('')}
