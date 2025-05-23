@@ -1,19 +1,7 @@
 ---
-First Journal Entry
-This is my first published journal entry. Everything between the --- markers will become a blog post.
+hello blog
 
-I can write multiple paragraphs here and they'll be preserved in the HTML output.
----
+this is pretty cool
 
-This text won't be published because it doesn't have opening and closing --- markers.
-
----
-Another Published Entry
-This is another entry that will be published.
-
-Each --- separated block becomes its own blog post with the first line as the title.
----
-
-test
-
+wowow
 ---
