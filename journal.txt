@@ -5,3 +5,5 @@ this is pretty cool
 
 wowow
 ---
+new blog
+---
