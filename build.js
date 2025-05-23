@@ -11,6 +11,9 @@ const posts = journalText.split('---').map(post => post.trim()).filter(post => p
        return `<img src="imgs/${filename}" class="img-${imageSize}" alt="${filename}">`;
    });
    
+   // Process markdown links
+   content = content.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+   
    const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }).toLowerCase();
    return { title, content, date };
 });
@@ -103,6 +106,13 @@ const html = `<!DOCTYPE html>
            margin: var(--spacing) 0; 
            border-radius: 4px; 
        }
+       a { 
+           color: currentColor; 
+           text-decoration-color: var(--color-primary); 
+           text-decoration-thickness: 0.2ex; 
+           text-underline-offset: 0.3ex; 
+       }
+       a:hover { text-decoration-thickness: 0.3ex; }
    </style>
 </head>
 <body>

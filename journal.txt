@@ -10,6 +10,7 @@ new blog
 test testasdkjh
 aksjdhkada
 @imgs/art2.png --small
+[test link](https://x.com/notifications)
 aksjhdkajsd
 ---
 hello
