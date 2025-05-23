@@ -81,12 +81,18 @@ const html = `<!DOCTYPE html>
            margin-top: calc(var(--spacing) / 2);
            margin-bottom: calc(var(--spacing) / 2);
            text-align: left;
+        }
+        .entry-content * {
+            text-align: left;
        }
        .entry-content { 
            white-space: pre-wrap; 
            font-size: 1.3rem;
            display: none; 
            text-align: left;
+        }
+        .entry-content * {
+            text-align: left;
        }
        .entry-content.open { display: block; }
    </style>
