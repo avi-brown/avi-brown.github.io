@@ -1,24 +1,24 @@
 name: Build and Deploy Journal
 on:
-  push:
-    branches: [ main ]
-    paths: [ 'journal.txt' ]
+ push:
+   branches: [ main ]
+   paths: [ 'journal.txt' ]
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-    - name: Generate HTML
-      run: node build.js
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
-        publish_branch: gh-pages
-        cname: journal.avi.engineer
+ build-and-deploy:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Checkout
+     uses: actions/checkout@v3
+   - name: Setup Node.js
+     uses: actions/setup-node@v3
+     with:
+       node-version: '18'
+   - name: Generate HTML
+     run: node build.js
+   - name: Commit generated files
+     run: |
+       git config --local user.email "action@github.com"
+       git config --local user.name "GitHub Action"
+       git add index.html
+       git commit -m "Update journal" || exit 0
+       git push
