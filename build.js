@@ -12,7 +12,7 @@ const html = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>avi brown's μblog</title>
+    <title>Avi Brown's μblog</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
         :root {
@@ -62,27 +62,62 @@ const html = `<!DOCTYPE html>
         .entry { 
             margin-bottom: calc(var(--spacing) * 2); 
             padding-bottom: var(--spacing); 
-        }
-        .entry:not(:last-child) { 
             border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
         }
-        .entry-title { margin-bottom: calc(var(--spacing) / 3); }
+        .entry-summary { 
+            cursor: pointer; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: baseline; 
+        }
+        .entry-toggle { 
+            font-size: 1rem; 
+            opacity: 0.7; 
+        }
+        .entry-title { margin: 0; }
         .entry-date { 
             opacity: 0.5; 
             font-size: 1rem; 
-            margin-bottom: var(--spacing); 
+            margin: 0; 
         }
-        .entry-content { white-space: pre-wrap; }
+        .entry-content { 
+            white-space: pre-wrap; 
+            margin-top: var(--spacing); 
+            display: none; 
+        }
+        .entry-content.open { display: block; }
     </style>
 </head>
 <body>
     <header>
         <div class="nav"><a href="https://avi.engineer" class="home-link">home</a></div>
-        <h1>avi brown's μblog</h1>
+        <h1>Avi Brown's μblog</h1>
     </header>
     <main>
-        ${posts.map(post => `<article class="entry"><h2 class="entry-title">${post.title}</h2><div class="entry-date">${post.date}</div><div class="entry-content">${post.content}</div></article>`).join('')}
+        ${posts.map(post => `
+        <article class="entry">
+            <div class="entry-summary" onclick="toggleEntry(this)">
+                <h2 class="entry-title">${post.title}</h2>
+                <span class="entry-toggle">+</span>
+            </div>
+            <div class="entry-date">${post.date}</div>
+            <div class="entry-content">${post.content}</div>
+        </article>
+        `).join('')}
     </main>
+    <script>
+        function toggleEntry(summary) {
+            const content = summary.parentNode.querySelector('.entry-content');
+            const toggle = summary.querySelector('.entry-toggle');
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                toggle.textContent = '+';
+            } else {
+                content.classList.add('open');
+                toggle.textContent = '−';
+            }
+        }
+    </script>
 </body>
 </html>`;
 fs.writeFileSync('index.html', html);
