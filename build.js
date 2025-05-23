@@ -82,7 +82,7 @@ const html = `<!DOCTYPE html>
            margin-bottom: calc(var(--spacing) / 2);
        }
        .entry-content { 
-           white-space: pre-wrap; 
+           white-space: pre-line; 
            font-size: 1.3rem;
            display: none; 
        }
