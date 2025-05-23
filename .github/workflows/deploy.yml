@@ -15,10 +15,3 @@ jobs:
        node-version: '18'
    - name: Generate HTML
      run: node build.js
-   - name: Commit generated files
-     run: |
-       git config --local user.email "action@github.com"
-       git config --local user.name "GitHub Action"
-       git add index.html
-       git commit -m "Update journal" || exit 0
-       git push
