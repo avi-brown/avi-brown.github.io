@@ -9,3 +9,5 @@ new blog
 ---
 hello
 ---
+hello
+---
