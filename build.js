@@ -28,7 +28,7 @@ const html = `<!DOCTYPE html>
                --color-light: #1a1a1a;
            }
        }
-       * { box-sizing: border-box; }
+       * { box-sizing: border-box; text-align: left; }
        body { 
            background: var(--color-light); 
            color: var(--color-dark); 
@@ -80,19 +80,11 @@ const html = `<!DOCTYPE html>
            font-size: 1rem; 
            margin-top: calc(var(--spacing) / 2);
            margin-bottom: calc(var(--spacing) / 2);
-           text-align: left;
-        }
-        .entry-content * {
-            text-align: left;
        }
        .entry-content { 
            white-space: pre-wrap; 
            font-size: 1.3rem;
            display: none; 
-           text-align: left;
-        }
-        .entry-content * {
-            text-align: left;
        }
        .entry-content.open { display: block; }
    </style>
