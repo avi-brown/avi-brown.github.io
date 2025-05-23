@@ -43,7 +43,7 @@ const html = `<!DOCTYPE html>
            font-weight: 700; 
            font-size: 2rem; 
            line-height: 1.3; 
-           margin-bottom: calc(var(--spacing) / 2);
+           margin-bottom: calc(var(--spacing) * 2);
        }
        h2 { 
            font-weight: 700; 
@@ -80,11 +80,13 @@ const html = `<!DOCTYPE html>
            font-size: 1rem; 
            margin-top: calc(var(--spacing) / 2);
            margin-bottom: calc(var(--spacing) / 2);
+           text-align: left;
        }
        .entry-content { 
            white-space: pre-wrap; 
            font-size: 1.3rem;
            display: none; 
+           text-align: left;
        }
        .entry-content.open { display: block; }
    </style>
