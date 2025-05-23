@@ -9,6 +9,7 @@ new blog
 
 test testasdkjh
 aksjdhkada
+@imgs/art2.png --medium
 aksjhdkajsd
 ---
 hello

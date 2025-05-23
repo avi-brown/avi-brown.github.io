@@ -3,7 +3,14 @@ const journalText = fs.readFileSync('journal.txt', 'utf8');
 const posts = journalText.split('---').map(post => post.trim()).filter(post => post.length > 0).map((post, index) => {
    const lines = post.split('\n').filter(line => line.trim());
    const title = lines[0] || `Entry ${index + 1}`;
-   const content = lines.slice(1).join('\n');
+   let content = lines.slice(1).join('\n');
+   
+   // Process images
+   content = content.replace(/@imgs\/([^\s]+\.(jpg|jpeg|png|gif|webp))(\s--(small|medium|large))?/gi, (match, filename, ext, sizeMatch, size) => {
+       const imageSize = size || 'medium';
+       return `<img src="imgs/${filename}" class="img-${imageSize}" alt="${filename}">`;
+   });
+   
    const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }).toLowerCase();
    return { title, content, date };
 });
@@ -87,6 +94,15 @@ const html = `<!DOCTYPE html>
            display: none; 
        }
        .entry-content.open { display: block; }
+       .img-small { max-width: 200px; }
+       .img-medium { max-width: 400px; }
+       .img-large { max-width: 100%; }
+       img { 
+           display: block; 
+           height: auto; 
+           margin: var(--spacing) 0; 
+           border-radius: 4px; 
+       }
    </style>
 </head>
 <body>
