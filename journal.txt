@@ -1,6 +1,6 @@
 ---
 
-low-based robotics software
+Flow-based robotics software
 
 What is a robust, reasonable, and performant pattern for robotics software? I have become fixated with the idea of "motor schemas" as outlined in (Behavior Based Robotics)[https://drive.google.com/file/d/1wTOULkwuqKUGy5b5qClm-2N-jUn7pVHe/view].
 
