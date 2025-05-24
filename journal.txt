@@ -1,7 +1,62 @@
+---
+date: 24 May 2025
+
+testiees
+ssdsds
+
+
+---
+date: 24 May, 2025
+
+whattup
+
+---
+date: 23 May 2025
+
+This is how I will quit X
+
+This blog is just a plain text file on my computer.
+It looks like this:
+
+
+@imgs/blog_screenshot.png --medium
+
+
+I set it up with Sonnet 4's help. Basically:
+- I write blogs separated by three dashes
+- I push to main
+- GitHub actions trigger a parser and index.html is generated
+
+
+I will start posting quick thoughts here instead of X.
+
+
+---
+
+date: 21 April 2025
+
+Flow-based robotics software
+
+What is a robust, reasonable, and performant pattern for robotics software? I have become fixated with the idea of "motor schemas" as outlined in [Behavior Based Robotics](https://drive.google.com/file/d/1wTOULkwuqKUGy5b5qClm-2N-jUn7pVHe/view).
+
+
+To put it in my own words: For every data input (i.e. sensor reading) there should be a [unidirectional computational flow](https://en.wikipedia.org/wiki/Directed_acyclic_graph#:~:text=A%20directed%20acyclic%20graph%20is,a%20path%20with%20zero%20edges) transforming the input into a motor command. The system as a whole is comprised of parallel flows which are not aware of one another, and whose constituent motor commands are vector summed to yield overall motor behavior.
+
+
+This feels clean and data-driven to me. A natural fit for this approach is [flow-based programming](https://blog.kodigy.com/post/state-of-flow-based-programming/) which seems like a healthy balance between the composability of functional programming and some light statefulness (state may exist on a component level though there is no global state).
+
+
+A great library for embedded flow-based programming is [RAMEN](https://github.com/Zubax/ramen) from Zubax Robotics. I've played with it on my laptop and now I'm trying to settle on an MCU with a decent C++20-compatible toolchain with the goal of making a little PoC robot.
+
+
+Now, if we design our system such that the [Modules Serve the Network](https://kvaser.com/wp-content/uploads/2014/08/cankingdom301p.pdf) (after all, what is a system if not a network?), and let our robot accept network definitions as input, then things start to get interesting.
+
+---
 
 ---
 date: 24 May 2025
 
-test test 12
-loll
+im just a blog
+this is another line
+haha this is great actually
 ---
