@@ -1,7 +1,6 @@
 ---
-test
-date: 24 May 2025
----
+
+date: 21 April 2025
 
 Flow-based robotics software
 
@@ -21,16 +20,7 @@ Now, if we design our system such that the [Modules Serve the Network](https://k
 
 
 ---
-
-The Diversified Self
-
-Investors diversify their portfolios primarily in order to:
-
-reduce risk
-expose their resources to new growth opportunities
-I wonder if this strategy can be applied healthily to the self. I tend to prefer unified worldviews / lifestyles, at least conceptually. They are clean, holistic, and seem wise. But if one is even somewhat agnostic about key aspects of life it's hard to buy in fully to any one system. This has classically been a source of angst for me, never feeling quite at home; but maybe there is a silver lining: Maybe being "spiritually diversified" has made me more resilient to chaos?
-
----
+date: 23 May 2025
 
 This is how I will quit X
 
