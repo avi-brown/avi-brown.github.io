@@ -1,3 +1,7 @@
+---
+date: 24 May, 2025
+
+whattup
 
 ---
 date: 23 May 2025
@@ -40,4 +44,12 @@ A great library for embedded flow-based programming is [RAMEN](https://github.co
 
 Now, if we design our system such that the [Modules Serve the Network](https://kvaser.com/wp-content/uploads/2014/08/cankingdom301p.pdf) (after all, what is a system if not a network?), and let our robot accept network definitions as input, then things start to get interesting.
 
+---
+
+---
+date: 24 May 2025
+
+im just a blog
+this is another line
+haha this is great actually
 ---
