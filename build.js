@@ -2,16 +2,22 @@ const fs = require('fs');
 const journalText = fs.readFileSync('journal.txt', 'utf8');
 const posts = journalText.split('---').map(post => post.trim()).filter(post => post.length > 0).map((post, index) => {
    const lines = post.split('\n').filter(line => line.trim());
-   const title = lines[0] || `Entry ${index + 1}`;
    
    // Check for date line
    let dateValue = '';
+   let titleIndex = 0;
    let contentStartIndex = 1;
+   
    if (lines.length > 1 && lines[1].startsWith('date:')) {
        dateValue = lines[1].substring(5).trim().toLowerCase();
-       contentStartIndex = 2;
+       titleIndex = 2; // Title is the line after date
+       contentStartIndex = 3; // Content starts after title
    }
    
+   // Get title (either first line or line after date)
+   const title = (lines[titleIndex] || `Entry ${index + 1}`);
+   
+   // Get content (everything after title)
    let content = lines.slice(contentStartIndex).join('\n');
    
    // Process images
