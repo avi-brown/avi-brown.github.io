@@ -1,11 +1,4 @@
 ---
-
-Hi Leora
-
-That was fun
-
-
----
 This is how I will quit X
 
 This blog is just a plain text file on my computer.
