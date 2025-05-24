@@ -3,7 +3,16 @@ const journalText = fs.readFileSync('journal.txt', 'utf8');
 const posts = journalText.split('---').map(post => post.trim()).filter(post => post.length > 0).map((post, index) => {
    const lines = post.split('\n').filter(line => line.trim());
    const title = lines[0] || `Entry ${index + 1}`;
-   let content = lines.slice(1).join('\n');
+   
+   // Check for date line
+   let dateValue = '';
+   let contentStartIndex = 1;
+   if (lines.length > 1 && lines[1].startsWith('date:')) {
+       dateValue = lines[1].substring(5).trim().toLowerCase();
+       contentStartIndex = 2;
+   }
+   
+   let content = lines.slice(contentStartIndex).join('\n');
    
    // Process images
    content = content.replace(/@imgs\/([^\s]+\.(jpg|jpeg|png|gif|webp))(\s--(small|medium|large))?/gi, (match, filename, ext, sizeMatch, size) => {
@@ -14,8 +23,7 @@ const posts = journalText.split('---').map(post => post.trim()).filter(post => p
    // Process markdown links
    content = content.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
    
-   const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }).toLowerCase();
-   return { title, content, date };
+   return { title, content, date: dateValue };
 });
 const html = `<!DOCTYPE html>
 <html lang="en">

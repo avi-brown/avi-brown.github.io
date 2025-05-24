@@ -1,5 +1,6 @@
 ---
 test
+date: 24 May 2025
 ---
 
 Flow-based robotics software
@@ -49,6 +50,3 @@ I set it up with Sonnet 4's help. Basically:
 I will start posting quick thoughts here instead of X.
 
 ---
-
-
-
