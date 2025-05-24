@@ -3,21 +3,37 @@ const journalText = fs.readFileSync('journal.txt', 'utf8');
 const posts = journalText.split('---').map(post => post.trim()).filter(post => post.length > 0).map((post, index) => {
    const lines = post.split('\n').filter(line => line.trim());
    
-   // Check for date line
+   // Check for date line and title
    let dateValue = '';
-   let titleIndex = 0;
-   let contentStartIndex = 1;
+   let title = `Entry ${index + 1}`;
+   let contentStartIndex = 0;
    
-   if (lines.length > 1 && lines[1].startsWith('date:')) {
+   // If first line starts with date:
+   if (lines.length > 0 && lines[0].startsWith('date:')) {
+       dateValue = lines[0].substring(5).trim().toLowerCase();
+       
+       // Find the next non-empty line for title
+       for (let i = 1; i < lines.length; i++) {
+           if (lines[i].trim()) {
+               title = lines[i];
+               contentStartIndex = i + 1;
+               break;
+           }
+       }
+   } 
+   // If second line starts with date:
+   else if (lines.length > 1 && lines[1].startsWith('date:')) {
+       title = lines[0];
        dateValue = lines[1].substring(5).trim().toLowerCase();
-       titleIndex = 2; // Title is the line after date
-       contentStartIndex = 3; // Content starts after title
+       contentStartIndex = 2;
+   }
+   // No date line
+   else if (lines.length > 0) {
+       title = lines[0];
+       contentStartIndex = 1;
    }
    
-   // Get title (either first line or line after date)
-   const title = (lines[titleIndex] || `Entry ${index + 1}`);
-   
-   // Get content (everything after title)
+   // Get content (everything after title and date)
    let content = lines.slice(contentStartIndex).join('\n');
    
    // Process images
