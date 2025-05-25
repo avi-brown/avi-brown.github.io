@@ -36,6 +36,9 @@ const posts = journalText.split('---').map(post => post.trim()).filter(post => p
    // Get content (everything after title and date)
    let content = lines.slice(contentStartIndex).join('\n');
    
+   // Strip ANSI color codes and other control sequences
+   content = content.replace(/\u001b\[[0-9;]*[a-zA-Z]|\u001b\([0-9A-Z]|\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]|\(B\[m|\(B/g, '');
+   
    // Process images
    content = content.replace(/@imgs\/([^\s]+\.(jpg|jpeg|png|gif|webp))(\s--(small|medium|large))?/gi, (match, filename, ext, sizeMatch, size) => {
        const imageSize = size || 'medium';
