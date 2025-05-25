@@ -1,4 +1,11 @@
 ---
+date: 25 May 2025
+
+Hello X, I'm writing a blog post.
+It's a MICRO blog.
+
+
+---
 date: 24 May 2025
 
 I am now blogging from my terminal
