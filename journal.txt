@@ -1,6 +1,14 @@
 ---
 date: 25 May 2025
 
+[32mThe Maker Cage
+There is a strain within the maker scene of geeks driven by a desire tocratize everything into plug-and-playable oblivion. I was sucked into this at the start because it enabled me to achieve "builds" with the semblance of engineering when it reality it required less prowess than aUnjustified dopamine hits locked me within a cage of mediocrity. It wasn't until I began stumbling upon actual engineers that my self-image began to crack and of the cargo cult that is the maker scene. Stop making toys (unless you really want to) and start engineering the messiah.
+(B[m
+
+
+---
+date: 25 May 2025
+
 pour que
 Modern PCBs use copper pours to fill blank space as opposed to older PCBs which just leave blank substrate, just realizing this is why a lot of newer PCBs "feel" more substantial (among other reasons).  
 Lots of nice benefits to copper pours (some of which I don't fully understand) in the comments of this [hackaday article](https://hackaday.com/2025/01/31/a-history-of-copper-pours/)
