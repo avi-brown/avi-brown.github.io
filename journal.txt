@@ -3,6 +3,7 @@ date: 24 May 2025
 
 I am now blogging from my terminal
 I made a little bash script that lets me just type into the terminal and hit enter and this magically appears on my website.
+
 I love technology
 
 
