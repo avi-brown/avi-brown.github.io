@@ -1,6 +1,17 @@
 ---
 date: 25 May 2025
 
+Peeking under the hood
+I can point to a few key encounters online that made me realize I don't know what I'm talking about.
+One was when I first stumbled upon geohot's streams on youtube and watched him open up the dissassembly of a program and analyze it. I didn't even know what assembly was. I realized then that I literally did not know what a computer program was or how things ran on computers. It blew my mind open and led me to his "From the transistor" repo which I studied time and time again.
+Another one was when I was trying to get an ODrive motor controller to work and I clicked into [this video](https://www.youtube.com/watch?v=Htb2Q0Yw1FU&ab_channel=MattBilsky) by accident. Seeing this guy reverse engineer some bytes to understand the underlying protocol made me realize that I didn't know how devices communicate with each other -- what IS Tx and Rx?! What are protocols?!
+Another is finding [@adammaj's](https://x.com/MajmudarAdam) X account when he was designing his own GPU on the SILICON level. This sent me reeling and led me to the Zero to ASIC course which led to many other rabbit holes.
+There have been so many of these over the years and they are gifts. I pray for many more.
+
+
+---
+date: 25 May 2025
+
 RP2040/2350's documentation...
 is so readable without skimping on technical details. Reading it feels like talking to an experienced mentor.
 Like I could read [this](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf) design guide for fun
