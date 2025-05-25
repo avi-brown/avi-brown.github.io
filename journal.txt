@@ -1,8 +1,7 @@
 ---
 date: 25 May 2025
 
-Hello X, I'm writing a blog post.
-It's a MICRO blog.
+RP2040/2350's documentation is so readable without skimping on technical details. Reading it feels like talking to an experienced mentor
 
 
 ---
