@@ -1,6 +1,14 @@
 ---
 date: 25 May 2025
 
+[32mLUTs vs DSPs
+Til now I haven't really understood why FPGAs often ship with dedicated DSP blocks. This always seemed off to me bc shouldn't any digital logic be implementable directly on the FPGA? And while this is true in terms of -functionality- (any DSP functionality can theoretically be implemented in the FPGA lattice) there is likely a lot of resource inefficiency with things like multipliers which may take up hundreds of LUTs. For instance a simple 2-input AND gate may use the same LUT resource as a complex 6-input boolean function.
+(B[m
+
+
+---
+date: 25 May 2025
+
 The Maker Cage
 There is a strain within the maker scene of geeks driven by a desire to democratize everything into plug-and-playable oblivion. I was sucked into this at the start because it enabled me to achieve builds with the semblance of engineering when it reality it required less prowess than a LEGO set. Unjustified dopamine hits locked me within a cage of mediocrity. It wasn't until I began stumbling upon actual engineers that my self-image began to crack and I grew aware of the cargo cult that is the maker scene. That is when I decided to stop making toys and start engineering the messiah.
 
