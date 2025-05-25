@@ -1,6 +1,15 @@
 ---
 date: 25 May 2025
 
+[32mpour que
+Modern PCBs use copper pours to fill blank space as opposed to older PCBs which just leave blank substrate, just realizing this is why a lot of newer PCBs "feel" more substantial (among other reasons).  
+Lots of nice benefits (some of which I don't fully understand) in the comments of this [hackaday article](https://hackaday.com/2025/01/31/a-history-of-copper-pours/)
+Copper pours reducing inductance for power connections feels intuitively right to me but I need to understand why(B[m
+
+
+---
+date: 25 May 2025
+
 Peeking under the hood
 I can point to a few key encounters online that made me realize I don't know what I'm talking about.
 One was when I first stumbled upon geohot's streams on youtube and watched him open up the dissassembly of a program and analyze it. I didn't even know what assembly was. I realized then that I literally did not know what a computer program was or how things ran on computers. It blew my mind open and led me to his "From the transistor" repo which I studied time and time again.
