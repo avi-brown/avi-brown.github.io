@@ -10,7 +10,7 @@ I love technology
 
 date: 23 May 2025
 
-This is how I will quit X
+This is how I quit
 
 This blog is just a plain text file on my computer.
 It looks like this:
