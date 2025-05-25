@@ -1,9 +1,8 @@
 ---
 date: 25 May 2025
 
-[32mLUTs vs DSPs
+LUTs and DSPs
 Til now I haven't really understood why FPGAs often ship with dedicated DSP blocks. This always seemed off to me bc shouldn't any digital logic be implementable directly on the FPGA? And while this is true in terms of -functionality- (any DSP functionality can theoretically be implemented in the FPGA lattice) there is likely a lot of resource inefficiency with things like multipliers which may take up hundreds of LUTs. For instance a simple 2-input AND gate may use the same LUT resource as a complex 6-input boolean function.
-(B[m
 
 
 ---
