@@ -3,7 +3,7 @@ date: 25 May 2025
 
 RP2040/2350's documentation...
 is so readable without skimping on technical details. Reading it feels like talking to an experienced mentor.
-Like I could read (this)[https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf] design guide for fun
+Like I could read [this](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf) design guide for fun
 
 
 ---
