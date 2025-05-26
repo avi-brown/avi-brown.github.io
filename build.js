@@ -150,22 +150,32 @@ const html = `<!DOCTYPE html>
            cursor: pointer;
            font-size: 1rem;
            opacity: 0.7;
-           margin-bottom: calc(var(--spacing) * 2);
            text-decoration: underline;
            text-decoration-color: var(--color-primary);
            text-decoration-thickness: 0.2ex;
            text-underline-offset: 0.3ex;
-           display: inline-block;
+           display: block;
+           position: fixed;
+           right: 2rem;
+           top: 2rem;
+           background-color: var(--color-light);
+           padding: 0.5rem 1rem;
+           border-radius: 4px;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+           z-index: 100;
        }
-       .collapse-all:hover { text-decoration-thickness: 0.3ex; }
+       .collapse-all:hover { 
+           text-decoration-thickness: 0.3ex;
+           opacity: 1;
+       }
    </style>
 </head>
 <body>
    <header>
        <div class="nav"><a href="https://avi.engineer" class="home-link">avi.engineer</a></div>
        <h1>avi brown's μblog</h1>
-       <div class="collapse-all" onclick="collapseAll()">collapse all</div>
    </header>
+   <div class="collapse-all" onclick="collapseAll()">collapse all</div>
    <main>
        ${posts.map(post => `
        <article class="entry">
