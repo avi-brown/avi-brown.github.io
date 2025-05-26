@@ -1,6 +1,13 @@
 ---
 date: 26 May 2025
 
+How to think of SIMD
+It takes work for the CPU to decode an instruction. So if it's already unwrapping it, we may as well use it on as many data as possible! That number depends on the architecture. @imgs/screenshot_20250526170734_0.png
+
+
+---
+date: 26 May 2025
+
 clock cycle Fermi estimation
 wow the yt algorithm completely nailed it with [this video](https://www.youtube.com/watch?v=Ge3aKEmZcqY&ab_channel=MollyRocket), just yesterday I was thinking that I want to start getting better at back of the envelope math for things like CPU cycles @imgs/screenshot_20250526142141_0.png
 
