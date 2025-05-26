@@ -1,6 +1,14 @@
 ---
 date: 26 May 2025
 
+Testing images
+Here's a pic --screenshot
+Did that work?
+
+
+---
+date: 26 May 2025
+
 blue vs white noise
 Blue noise patterns emerge in "naturally random" distributions  -- such as grass growth patterns -- where points maintain a certain distance from one another. This makes sense because in the case of grass (for instance) each tuft consumes resources and so surrounding tufts can't get too close lest they starve. Turns out this pattern appears like everywhere including in our eyes (the receptors follow a blue noise pattern which gives good coverage). Watching [this video](https://www.youtube.com/watch?v=Ge3aKEmZcqY&ab_channel=MollyRocket) which although is not specifically about noise patterns is teaching me a lot about them lol
 
