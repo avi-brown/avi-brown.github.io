@@ -1,6 +1,13 @@
 ---
 date: 26 May 2025
 
+clock cycle Fermi estimation
+wow the yt algorithm completely nailed it with [this video](https://www.youtube.com/watch?v=Ge3aKEmZcqY&ab_channel=MollyRocket), just yesterday I was thinking that I want to start getting better at back of the envelope math for things like CPU cycles @imgs/screenshot_20250526142141_0.png
+
+
+---
+date: 26 May 2025
+
 performance
 Watching the Molly Rocket lectures it seems that a good starting point for beginning to think deeply about performance is to separate code into latency-critical processes vs. throughput-critical processes
 
