@@ -157,6 +157,14 @@ const html = `<!DOCTYPE html>
            object-fit: cover;
            border-radius: 4px;
        }
+       .title-divider {
+           border: 0;
+           height: 1px;
+           background-color: var(--color-primary);
+           margin-top: calc(var(--spacing) * -1);
+           margin-bottom: calc(var(--spacing) * 2);
+           opacity: 0.5;
+       }
        .collapse-all {
            cursor: pointer;
            font-size: 1rem;
@@ -188,6 +196,7 @@ const html = `<!DOCTYPE html>
            <img src="imgs/banner.jpeg" alt="Banner" class="banner-image">
        </div>
        <h1>avi brown's μblog</h1>
+       <hr class="title-divider">
    </header>
    <div class="collapse-all" onclick="collapseAll()">collapse all</div>
    <main>
