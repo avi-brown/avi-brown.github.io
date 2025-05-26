@@ -1,6 +1,13 @@
 ---
 date: 26 May 2025
 
+test
+test
+
+
+---
+date: 26 May 2025
+
 How to think of SIMD
 It takes work for the CPU to decode an instruction. So if it's already unwrapping it, we may as well use it on as many data as possible! That number depends on the architecture. @imgs/screenshot_20250526170734_0.png
 
