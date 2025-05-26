@@ -1,11 +1,5 @@
 ---
-date: 26 May 2025
 
-tests
-testss
-
-
----
 date: 26 May 2025
 
 How to think of SIMD

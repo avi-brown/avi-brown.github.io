@@ -146,6 +146,17 @@ const html = `<!DOCTYPE html>
            text-underline-offset: 0.3ex; 
        }
        a:hover { text-decoration-thickness: 0.3ex; }
+       .banner-container {
+           width: 100%;
+           margin-bottom: var(--spacing);
+           overflow: hidden;
+       }
+       .banner-image {
+           width: 100%;
+           height: auto;
+           object-fit: cover;
+           border-radius: 4px;
+       }
        .collapse-all {
            cursor: pointer;
            font-size: 1rem;
@@ -173,6 +184,9 @@ const html = `<!DOCTYPE html>
 <body>
    <header>
        <div class="nav"><a href="https://avi.engineer" class="home-link">avi.engineer</a></div>
+       <div class="banner-container">
+           <img src="imgs/banner.jpeg" alt="Banner" class="banner-image">
+       </div>
        <h1>avi brown's μblog</h1>
    </header>
    <div class="collapse-all" onclick="collapseAll()">collapse all</div>
