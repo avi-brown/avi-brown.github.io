@@ -146,12 +146,25 @@ const html = `<!DOCTYPE html>
            text-underline-offset: 0.3ex; 
        }
        a:hover { text-decoration-thickness: 0.3ex; }
+       .collapse-all {
+           cursor: pointer;
+           font-size: 1rem;
+           opacity: 0.7;
+           margin-bottom: calc(var(--spacing) * 2);
+           text-decoration: underline;
+           text-decoration-color: var(--color-primary);
+           text-decoration-thickness: 0.2ex;
+           text-underline-offset: 0.3ex;
+           display: inline-block;
+       }
+       .collapse-all:hover { text-decoration-thickness: 0.3ex; }
    </style>
 </head>
 <body>
    <header>
-       <div class="nav"><a href="https://avi.engineer" class="home-link">home</a></div>
+       <div class="nav"><a href="https://avi.engineer" class="home-link">avi.engineer</a></div>
        <h1>avi brown's μblog</h1>
+       <div class="collapse-all" onclick="collapseAll()">collapse all</div>
    </header>
    <main>
        ${posts.map(post => `
@@ -178,6 +191,16 @@ const html = `<!DOCTYPE html>
                content.classList.add('open');
                toggle.textContent = '−';
            }
+       }
+       
+       function collapseAll() {
+           const openContents = document.querySelectorAll('.entry-content.open');
+           openContents.forEach(content => {
+               content.classList.remove('open');
+               const summary = content.parentNode.querySelector('.entry-summary');
+               const toggle = summary.querySelector('.entry-toggle');
+               toggle.textContent = '+';
+           });
        }
    </script>
 </body>
