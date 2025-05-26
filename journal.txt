@@ -1,5 +1,12 @@
 ---
 date: 26 May 2025
+
+performance
+Watching the Molly Rocket lectures it seems that a good starting point for beginning to think deeply about performance is to separate code into latency-critical processes vs. throughput-critical processes
+
+
+---
+date: 26 May 2025
 uops
 [uops](https://uops.info/table.html) lets you see the number of ops, latency, throughput, etc. for all x86 microarchitectures.
 @imgs/screenshot_20250526140633_0.png --large
