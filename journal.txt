@@ -1,4 +1,14 @@
 ---
+date: 27 May 2025
+
+power levels over 80V x 65A
+yeah baby
+@imgs/screenshot_20250527122544_1.png
+80V@65A
+@imgs/screenshot_20250527122544_0.png
+
+
+---
 
 
 date: 26 May 2025
