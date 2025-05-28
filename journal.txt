@@ -1,4 +1,19 @@
 ---
+date: 28 May 2025
+
+SoA
+experimenting with SoA / AoS in C++, just toy examples I'm trying to hand write to check the differences. 
+
+In the AoS approach I made an array of Objects that have 3 float members a, b, and c. I initialized 100 thousand of them and stored in an array, then I loop over them and iterate just "a". 
+
+Then for SoA I made a struct of As Bs and Cs and then looped through just the As and iterated them. 
+
+Seeing 0.35s for AoS and 0.21 for SoA...
+
+Gonna ask an LLM for a better example. Lol
+
+
+---
 date: 27 May 2025
 
 power levels over 80V x 65A
