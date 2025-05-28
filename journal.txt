@@ -1,6 +1,17 @@
 ---
 date: 28 May 2025
 
+ESP32 vs STM32
+People online arguing about WHAT BETTER ESP32 OR STM32 with people on both sides convinced their side is obviously better.
+
+I hate when people argue about perfectly benchmarkable things.
+
+ESP32 (dualcore) is has a comparable CoreMark/MHz score to that of a Cortex M7
+
+
+---
+date: 28 May 2025
+
 SoA
 experimenting with SoA / AoS in C++, just toy examples I'm trying to hand write to check the differences. 
 
