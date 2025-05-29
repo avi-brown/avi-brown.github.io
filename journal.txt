@@ -5,16 +5,6 @@ Conway's Law
 The idea that organizations will design systems that copy their communication structure.
 Casey Muratori talks about how this accounts for many of the oddities that appear in enterprise software, such as the existence of 3+ different volume control sliders in Windows 11.
 
-
----
-date: 29 May 2025
-
-Conway's Law
-The idea that organizations will design systems that copy their communication structure.
-Casey Muratori talks about how this accounts for many of the oddities that appear in enterprise software, such as the existence of 3+ different volume control sliders in Windows 11.
-
-
-
 ---
 date: 28 May 2025
 
