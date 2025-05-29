@@ -5,7 +5,7 @@ date: 28 May 2025
 ESP32 vs STM32
 People online arguing about WHAT BETTER ESP32 OR STM32 with people on both sides convinced their side is obviously better.
 
-I hate when people argue about perfectly benchmarkable things.
+I hate when people argue about perfectly benchmarkable things, things that can be reasoned about.
 
 ESP32 (dualcore) is has a comparable CoreMark/MHz score to that of a Cortex M7
 
