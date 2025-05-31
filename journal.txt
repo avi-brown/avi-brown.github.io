@@ -1,4 +1,11 @@
 ---
+date: 31 May 2025
+
+Hi thi is a tet
+thi is a test blog
+
+
+---
 date: 29 May 2025
 
 Conway's Law
