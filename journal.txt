@@ -1,4 +1,19 @@
 ---
+date: 20 October 2025
+
+omarchy
+I am taking a month off of X (aside from checking DMs here and there in case someone has a zine question) and I've been enjoying using the free time to install and configure Omarchy. Man it is so fun. It has sort of made me fall back in love with my computer. A good friend of mine also installed it and it's great to share tips back and forth.
+
+Some of the nice tools I've been using:
+- yazi (for fast file exploration -- ditch Nautilus!)
+- qutebrowser (for mouse-free web surfing)
+- astroterm (for terminal star gazing)
+- hyprmon (for TUI-based monitor config)
+
+Also I decided to finally switch to vim (neovim) for text editing. I have tried many times before but it never felt fun or like a net gain, but this time is is sticking and I'm having a great time.
+
+
+---
 date: 29 May 2025
 
 Conway's Law
