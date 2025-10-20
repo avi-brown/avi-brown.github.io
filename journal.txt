@@ -1,14 +1,6 @@
 ---
 date: 20 October 2025
 
-screenshot text
---screenshot
-did that work
-
-
----
-date: 20 October 2025
-
 omarchy
 I am taking a month off of X (aside from checking DMs here and there in case someone has a zine question) and I've been enjoying using the free time to install and configure Omarchy. Man it is so fun. It has sort of made me fall back in love with my computer. A good friend of mine also installed it and it's great to share tips back and forth.
 
