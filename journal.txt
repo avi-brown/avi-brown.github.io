@@ -1,4 +1,11 @@
 ---
+date: 21 October 2025
+
+dammit casey
+I can't listen to/watch Casey Muratori without getting the itch to write some parallel shit. Learning about setting thread affinity atm
+
+
+---
 date: 20 October 2025
 
 omarchy
