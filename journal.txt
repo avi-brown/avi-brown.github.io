@@ -1,6 +1,14 @@
 ---
 date: 21 October 2025
 
+lmao
+sorry about that, guess i need to make this thing pay attention to white space
+and indentation
+
+
+---
+date: 21 October 2025
+
 some basic multicore experimentation
 this is my first time doodling with this stuff but here I show how to start a worker thread, set its affinity to one of the cpu's cores, and print out a count from each of the cores.
 
