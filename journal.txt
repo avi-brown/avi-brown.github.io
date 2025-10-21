@@ -1,6 +1,13 @@
 ---
 date: 21 October 2025
 
+to hedge against AI in the workforce...
+... you can focus on infrastructural concepts. big ideas, big machines. networking. distributed systems. architectures. data flows. being able to fluidly operate on that level from a place of EXPERIENCE makes you special.
+
+
+---
+date: 21 October 2025
+
 lmao
 sorry about that, guess i need to make this thing pay attention to white space
 and indentation
