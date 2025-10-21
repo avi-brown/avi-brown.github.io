@@ -1,6 +1,39 @@
 ---
 date: 21 October 2025
 
+some basic multicore experimentation
+this is my first time doodling with this stuff but here I show how to start a worker thread, set its affinity to one of the cpu's cores, and print out a count from each of the cores.
+
+import ctypes
+import psutil
+import os
+import threading
+import time
+
+
+libc = ctypes.CDLL("libc.so.6")
+
+def set_thread_affinity(id):
+    tid = threading.get_native_id()
+    mask = ctypes.c_ulong(1 << id)
+    libc.sched_setaffinity(tid, ctypes.sizeof(mask), ctypes.byref(mask))
+
+def worker(core):
+    set_thread_affinity(core)
+    for _ in range(10):
+        print(libc.sched_getcpu(), _)
+        time.sleep(1)        
+
+for core in range(0, os.cpu_count()):
+    threading.Thread(target=worker, args=[core]).start()
+    # time.sleep(0.01)  # <-- interesting that if you remove
+                        #     this the workers don't always
+                        #     run in order...    
+
+
+---
+date: 21 October 2025
+
 dammit casey
 I can't listen to/watch Casey Muratori without getting the itch to write some parallel shit. Learning about setting thread affinity atm
 
