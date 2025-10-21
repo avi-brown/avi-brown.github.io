@@ -1,6 +1,13 @@
 ---
 date: 21 October 2025
 
+man and technics
+I started reading man and technics last night. great ideas in there so far. I like the thought that the value of a "technic" lies in the life that it grants to the person utilizing it -- not in and of itself. this relates to the bugman who gets all soyed up over the newest iphone. at the end of the day the guy with the dumb phone is probably more likely to call his mom.
+
+
+---
+date: 21 October 2025
+
 to hedge against AI in the workforce...
 ... you can focus on infrastructural concepts. big ideas, big machines. networking. distributed systems. architectures. data flows. being able to fluidly operate on that level from a place of EXPERIENCE makes you special.
 
